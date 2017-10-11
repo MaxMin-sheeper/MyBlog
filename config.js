@@ -1,0 +1,1 @@
+exports.indexConfig = require('./src/config/index_config');
