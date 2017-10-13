@@ -28,7 +28,8 @@ const readStaticFiles = function(req, res, filename){
  * exports function of reading files
  */
 exports.loadfiels = function(req, res, pathname){
-  const filename = path.join('../../static', pathname);
+  const filename = path.join('E:\static', pathname);
+  console.log(filename);
   readStaticFiles(req, res, filename);
 }
 
@@ -38,6 +39,6 @@ module.exports = exports;
  * exports function of getting default page
  */
 exports.index = function(req, res){
-    const filename = path.join('../../static', 'html/index.html');
+    const filename = path.join('\static', 'html/index.html');
     readStaticFiles(req, res, filename);
 }
